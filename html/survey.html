@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+          <title>FFXIV Survey Form</title>
+          <link href="../css/survey.css" rel="stylesheet" />
+        <body>
+          <div id="header">
+        <h1 id="title">Final Fantasy XIV Survey Form </h1>
+        <p id="description"> Thank you for answering our questions </p>
+          </div>
+        <form id="survey-form">
+          <div id="content1">
+          <label id="name-label" for="name">Character's name
+          </label>
+          <input 
+           type="email" 
+           id="name"
+           placeholder="Enter your character's name"
+           required /> <br>
+          <label id="email-label" 
+                 for="email"> Email
+          </label>
+          <input
+                 type="text"
+                 id="email"
+                 placeholder="Enter your email"
+                 required /> <br>
+          <label id="number-label"
+                 for="age"> Age (optional)
+          </label>
+          <input
+                 type="number"
+                 id="age"
+                 placeholder="Enter your age"
+                 min="10"
+                 max="99" /> <br>
+          </div>
+          <div id="dropdowncontent1">
+          <p>On what datacenter do you play? </p>
+          <select id="dropdown" name="datacenter" size="9" required>
+            <option>Datacenter </option>
+            <option> Elemental </option>
+          <option> Gaia </option>
+            <option> Mana </option>
+            <option> Chaos </option>
+            <option> Light </option>
+            <option> Aether </option>
+            <option> Primal </option>
+            <option> Crystal </option>
+          </select>
+          </div>
+          <div id="radiocontent">
+          <p>What's your main role </p>
+          <label id="tank-label" for="tank">
+            <input
+                   id="tank"
+                   name="role"
+                   value="tank"
+                   type="radio"
+                   checked
+                   />Tank<br>
+          </label>
+          <label for="healer">
+            <input
+                   id="healer"
+                   name="role"
+                   value="healer"
+                   type="radio"
+                   />Healer
+          </label> <br>
+          <label id="melee-label" for="melee">
+            <input
+                   id="melee"
+                   name="role"
+                   value="meleedps"
+                   type="radio"
+                   />Melee DPS
+          </label> <br>
+          <label id="physr-label" for="physr">
+            <input
+                   id="physr"
+                   name="role"
+                   value="phyrangeddps"
+                   type="radio"
+                   />Physical Ranged DPS
+          </label> <br>
+          <label id="magr-label" for="magr">
+            <input 
+                   id="magr"
+                   name="role"
+                   value="magicrangeddps"
+                   type="radio"
+                   />Magical Ranged DPS
+                   </label>
+          </div>
+            <p> Please select your favorite job of every role </p>
+            <div id="dropdowncontent2">
+            <p> Tank </p>
+            <select id="dropdown2" name="tankjobs" >
+            <option> Gunbreaker </option>
+            <option> Dark Knight </option>
+          <option> Paladin </option>
+            <option> Warrior </option>
+              <option> I don't play tank jobs </option>
+          </select>
+                                                  <p> Healer </p>
+            <select id="dropdown3" name="healerjobs" >
+            <option> Astrologian </option>
+            <option> Scholar </option>
+          <option> Sage </option>
+            <option> White Mage </option>
+              <option> I don't play healer jobs</option>
+          </select>
+                                                    <p> Melee DPS </p>
+            <select id="dropdown4" name="meleejobs" >
+            <option> Samurai </option>
+            <option> Dragoon </option>
+          <option> Reaper </option>
+            <option> Monk </option>                   <option> Ninja </option>         <option> I don't play melee jobs</option>
+          </select>
+            
+            <p> Physical Ranged DPS </p>
+            <select id="dropdown5" name="physicalrangedjobs" >
+            <option> Machinist </option>
+            <option> Dancer </option>
+          <option> Bard </option>
+              <option> I don't play physical ranged jobs</option>
+          </select>
+            
+            <p> Magical Ranged DPS </p>
+            <select id="dropdown6" name="magicrangedjobs" >
+            <option> Red Mage </option>
+            <option> Summoner </option>
+          <option> Black Mage </option>
+              <option> I don't play magic ranged jobs</option>
+          </select>
+            </div>
+            <div id="checkboxcontent">
+            <p> What's your favorite end-game content? <span class="clue">(Please check one or more)</span> </p>
+            <label>
+              <input
+                     name="endgame"
+                     value="raiding"
+                     type="checkbox"
+                     class="input-checkbox">Raiding </label> <br>
+            <label>
+              <input 
+                     name="endgame"
+                     value="crafting"
+                     type="checkbox"
+                     class="input-checkbox">Crafting </label> <br>
+            <label>
+              <input
+                     name="endgame"
+                     value="gathering"
+                     type="checkbox"
+                     class="input-checkbox">Gathering </label> <br>
+            <label>
+              <input
+                     name="endgame"
+                     value="mount-hunting"
+                     type="checkbox"
+                     class="input-checkbox">Mount Hunting </label> <br>
+            <label>
+              <input
+                     name="endgame"
+                     value="glam-farming"
+                     type="checkbox"
+                     class="input-checkbox"> Glamour </label> <br>
+            <label>
+              <input
+                     name="endgame"
+                     value="roleplaying"
+                     type="checkbox"
+                     class="input checkbox">Roleplaying </label> <br>
+            <label>
+              <input
+                     name="endgame"
+                     value="leveling"
+                     type="checkbox"
+                     class="input-checkbox">Leveling </label> <br>
+            <label>
+              <input
+                     name="endgame"
+                     value="housing"
+                     type="checkbox"
+                     class="input-checkbox">Housing </label> <br>
+            </div>
+            <div id="comments">
+              <p>Any comments or suggestions?</p>
+              <textarea
+                        id="comment"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here"
+                        ></textarea>
+            
+            <div id="submitform">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+                                                                   </div>
+                                                                   </form>
+                     
+</html>
